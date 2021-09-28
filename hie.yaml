@@ -1,0 +1,43 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "distributed-process:lib"
+
+    - path: "././benchmarks/Throughput.hs"
+      component: "distributed-process:bench:distributed-process-throughput"
+
+    - path: "././benchmarks/Latency.hs"
+      component: "distributed-process:bench:distributed-process-latency"
+
+    - path: "././benchmarks/Channels.hs"
+      component: "distributed-process:bench:distributed-process-channels"
+
+    - path: "././benchmarks/Spawns.hs"
+      component: "distributed-process:bench:distributed-process-spawns"
+
+    - path: "././benchmarks/ProcessRing.hs"
+      component: "distributed-process:bench:distributed-process-ring"
+
+    - path: "distributed-process-tests/src"
+      component: "distributed-process-tests:lib"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestCHInMemory"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestCHInTCP"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestClosure"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestStats"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestMxInMemory"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestTracingInMemory"
+
+    - path: "distributed-process-tests/tests"
+      component: "distributed-process-tests:test:TestMxInTCP"

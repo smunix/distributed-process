@@ -119,6 +119,7 @@ import Control.Monad.Catch (MonadThrow(..), MonadCatch(..), MonadMask(..))
 import qualified Network.Transport as NT (EndPoint, EndPointAddress, Connection)
 import Control.Applicative
 import Control.Monad.Fix (MonadFix)
+import Control.Monad.Fail (MonadFail)
 import Control.Monad.Reader (MonadReader(..), ReaderT, runReaderT)
 import Control.Monad.IO.Class (MonadIO(..))
 import Control.Distributed.Process.Serializable
@@ -354,6 +355,7 @@ newtype Process a = Process {
            , Functor
            , Monad
            , MonadFix
+           , MonadFail
            , MonadIO
            , MonadReader LocalProcess
            , Typeable
